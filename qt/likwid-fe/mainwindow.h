@@ -5,7 +5,7 @@
 
 namespace Ui {
 class MainWindow;
-class RenderArea;
+class PlotArea;
 }
 
 class MainWindow : public QMainWindow
@@ -19,7 +19,7 @@ public:
 private:
     Ui::MainWindow *ui;
     QString appNameString;
-    Ui::RenderArea *renderArea;
+    Ui::PlotArea *plotArea;
 
 
 public slots:

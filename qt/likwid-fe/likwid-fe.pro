@@ -14,9 +14,9 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    renderArea.cpp
+    plotArea.cpp
 
 HEADERS  += mainwindow.h \
-    renderArea.h
+    plotArea.h
 
 FORMS    += mainwindow.ui

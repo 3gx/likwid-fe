@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>605</width>
-    <height>419</height>
+    <width>856</width>
+    <height>532</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -128,14 +128,27 @@
      <string>L2</string>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="profileView">
+   <widget class="QGraphicsView" name="plotView">
     <property name="geometry">
      <rect>
       <x>20</x>
       <y>160</y>
-      <width>571</width>
-      <height>211</height>
+      <width>831</width>
+      <height>271</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="stethoscope_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>30</y>
+      <width>146</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stethoscope mode</string>
     </property>
    </widget>
   </widget>
@@ -144,7 +157,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>605</width>
+     <width>856</width>
      <height>22</height>
     </rect>
    </property>

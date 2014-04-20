@@ -1,12 +1,12 @@
 #include <QtGui>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "renderArea.h"
+#include "plotArea.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
-    renderArea(new Ui::RenderArea)
+    plotArea(new Ui::PlotArea)
 {
     ui->setupUi(this);
     this->setWindowTitle("likwid-fe");
@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
-    delete renderArea;
+    delete plotArea;
     delete ui;
 }
 
@@ -34,11 +34,11 @@ void MainWindow::selectApp()
 
 void MainWindow::runApp()
 {
-    if (appNameString.isEmpty())
+    const bool isStethoscope = ui->stethoscope_checkBox->isChecked();
+    if (appNameString.isEmpty() && !isStthoscope)
     {
-        QMessageBox::critical(this, tr("likwid-fe"),
-                              tr("No app is specified."),
-                              QMessageBox::Ok);
+        QMessageBox::critical(this, tr("Error"),
+                              tr("No app is specified."));
         return;
     }
 
