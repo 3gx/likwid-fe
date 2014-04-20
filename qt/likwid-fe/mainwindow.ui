@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>605</width>
+    <height>419</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="runAppButton">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>30</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Run</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectAppButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>114</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>select app</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="appName">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>481</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="flops_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>146</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FLOPS</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="flopsSP_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>146</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FLOPS_SP</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="flopsDP_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>146</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FLOPS_DP</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="flopsAVX_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FLOPS_AVX</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="BW_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>80</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BANDWIDTH</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="L2_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>100</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>L2</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="profileView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>571</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>605</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuLikwid_fe">
+    <property name="title">
+     <string>likwid-fe</string>
+    </property>
+   </widget>
+   <addaction name="menuLikwid_fe"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
