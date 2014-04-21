@@ -35,7 +35,7 @@ void MainWindow::selectApp()
 void MainWindow::runApp()
 {
     const bool isStethoscope = ui->stethoscope_checkBox->isChecked();
-    if (appNameString.isEmpty() && !isStthoscope)
+    if (appNameString.isEmpty() && !isStethoscope)
     {
         QMessageBox::critical(this, tr("Error"),
                               tr("No app is specified."));

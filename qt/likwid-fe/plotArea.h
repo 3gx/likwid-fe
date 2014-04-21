@@ -4,7 +4,7 @@
 #include <QBrush>
 #include <QPen>
 #include <QPixmap>
-#include <QWidget>l
+#include <QWidget>
 namespace Ui
 {
   class PlotArea
